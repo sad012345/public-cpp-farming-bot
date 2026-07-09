@@ -43,8 +43,7 @@ flowchart TD
 3. Command handling
    - A thread in-game called "droneNetworker" will poll trello continuously for new command cards and attempt to grab them, appending them to the command queue if successful
    - A drone thread will take these commands and execute them, as well as create acknowledgements to inform the server that x command packet has been done.
-
-4.Proxying
+4. Proxying
    - Drone sends a card with the name being : id host path method awaitResponseFlag
    - Server processes this card, and depending on what state the awaitResponseFlag is, will do: 0.No reply, server never sends a reply card back 1.Body only, server sends only the json body back 2.Full, server sends a card containing headers and a card containing the body.
 
