@@ -65,3 +65,7 @@ Name your environment variables as follows:
 APIKEY  
 APITOKEN  
 BOARDID
+
+# Limitations:
+   - Proxying is very in-progress and much testing has not been done to ensure 100% functionality, also doesn't have a suitiable response to large data being returned
+   - Data set is very limited, I kinda forgot to get data so...
