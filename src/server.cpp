@@ -77,11 +77,15 @@ int main()
     const char* apiKeyEnv=std::getenv("APIKEY");
     const char* apiTokenEnv=std::getenv("APITOKEN");
     
+    const char* apiKeyEnv=std::getenv("APIKEY");
+    const char* apiTokenEnv=std::getenv("APITOKEN");
+    const char* boardIdEnv = std::getenv("BOARDID");
+
+
+    //Hard code your api stuff here
     const std::string apiKey = apiKeyEnv ? std::string(apiKeyEnv) : "";
     const std::string apiToken = apiTokenEnv ? std::string(apiTokenEnv) : "";
-    std::string boardId = "tBmp7uXe";
-    std::cout<<"Key: "+apiKey<<"\n";
-    std::cout<<"Token: "+apiToken<<"\n";
+    const std::string boardId = boardIdEnv ? std::string(boardIdEnv) : "";
 
 
     if(apiKey.size()==0 || apiToken.size()==0)
